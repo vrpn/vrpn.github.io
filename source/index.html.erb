@@ -1,10 +1,34 @@
 ---
-title: Welcome to Middleman
+title: VRPN - Virtual Reality Peripheral Network
+layout: layout_nocontainer
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>VRPN <small>the Virtual Reality Peripheral Network</small></h1>
+    <p>The device-independent, network-transparent system for accessing virtual reality peripherals from VR applications.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Open source</h2>
+      <p>The VRPN library is licensed under the <a href="http://www.boost.org/LICENSE_1_0.txt">Boost Software License 1.0</a>, and has been developed cooperatively by the virtual reality community for well over a decade.</p>
+      <p><a class="btn btn-primary" href="https://github.com/vrpn/vrpn">Show me to the source &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Ready to use</h2>
+      <p>The VRPN protocol has been integrated into a number of hardware devices and VR software platforms. The VRPN library package also includes a server with extensive built-in or optional device support, as well as basic tools for viewing device data.</p>
+      <p><a class="btn btn-default disabled" href="#">Binary downloads coming soon</a></p>
+   </div>
+    <div class="col-md-4">
+      <h2>More where this came from</h2>
+      <p>See our wiki on GitHub for supported devices, academic papers, credits, related software, development tutorials, and more...</p>
+      <p><a class="btn btn-primary" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
+
+
+  <%= partial "footer" %>
+</div> <!-- /container -->

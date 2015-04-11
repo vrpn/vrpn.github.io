@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*
+http://www.google.com/fonts#ReviewPlace:refine/Collection:Source+Sans+Pro:400,700,400italic|Anonymous+Pro:400,400italic,700|Exo+2:700
+*/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Anonymous+Pro:400,400italic,700|Exo+2:700);
+
+$font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace: "Anonymous Pro", Consolas, "Courier New", monospace;
+$headings-font-family: "Exo 2", $font-family-sans-serif;
+$headings-font-weight: 700;
+
+@import "bootstrap";
+
+$footer-padding: 20px;
+
+.navbar {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+}
+
+footer {
+  text-align: center;
+  color: $gray-light;
+  padding-top: $footer-padding;
+  padding-bottom: $footer-padding;
+  p {
+    padding-top: $footer-padding;
+  }
+}
