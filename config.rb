@@ -47,6 +47,8 @@
 #   end
 # end
 
+activate :sprockets
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -54,14 +56,14 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 # Template engines
-set :haml, { :ugly => true, :format => :html5 }
+set :haml, { :format => :html5 }
 
 #set :markdown_engine, :kramdown
 set :markdown_engine, :redcarpet # recommended for use of helpers
 set :markdown, fenced_code_blocks: true, with_toc_data: true, footnotes: true, no_intra_emphasis: true
 
-# Build-specific configuration
-configure :build do
+# Production-specific configuration
+configure :production do
   # For example, change the Compass output style for deployment
   activate :minify_css
 
@@ -79,7 +81,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   # Optional Settings
   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
   deploy.branch   = 'master' # default: gh-pages

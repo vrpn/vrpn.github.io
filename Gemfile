@@ -2,13 +2,13 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.3.10"
-
+gem "middleman", "~>4.3.6"
+gem "middleman-sprockets", "~> 4.1.1"
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-livereload", "~> 3.4.3"
 
 # Deployment
-gem 'middleman-deploy', '~> 1.0' unless Gem.win_platform?
+gem 'middleman-deploy', git: 'https://github.com/cabgfx/middleman-deploy' unless Gem.win_platform?
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
